@@ -12,4 +12,6 @@ func Route(r *gin.Engine) {
 
 	guest.GET("/transaction/:id", controller.GetTransaction())
 
+	guest.POST("/transaction", controller.CreateTransaction())
+
 }
