@@ -34,3 +34,12 @@ func GetTransaction() func(c *gin.Context) {
 		})
 	}
 }
+func CreateTransaction() func(c *gin.Context) {
+	return func(c *gin.Context) {
+
+		c.JSON(200, gin.H{
+			"code":    200,
+			"message": "Success",
+		})
+	}
+}
