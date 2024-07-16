@@ -9,10 +9,8 @@ import (
 // ROUTE
 func Route(r *gin.Engine) {
 
-	quest := r.Group("/api")
+	guest := r.Group("/api")
 
-	// quest.Use(middlewares.GuestSession())
-
-	quest.GET("/transaction/:id", controller.GetTransaction()) //done
+	guest.GET("/transaction/:id", controller.GetTransaction())
 
 }
