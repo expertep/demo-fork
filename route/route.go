@@ -6,7 +6,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// ROUTE
 func Route(r *gin.Engine) {
 
 	guest := r.Group("/api")
