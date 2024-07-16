@@ -2,6 +2,7 @@ package route
 
 import (
 	"demo_fork/controller"
+	middleware "demo_fork/middlewares"
 
 	"github.com/gin-gonic/gin"
 )
