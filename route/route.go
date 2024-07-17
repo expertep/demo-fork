@@ -19,4 +19,6 @@ func Route(r *gin.Engine) {
 
 	guest.POST("/transaction", controller.CreateTransaction())
 
+	quest.PATCH("/transaction/:id", controller.EditTransaction()) //done
+
 }
