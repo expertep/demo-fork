@@ -11,6 +11,8 @@ func Route(r *gin.Engine) {
 
 	guest := r.Group("/api")
 
-	guest.GET("/transaction/:id", middleware.Auth(), controller.GetTransaction())
+	guest.GET("/transaction/:id", middleware.Auth(), controller.GetTransaction()) // get transaction by id
+
+	guest.POST("/transaction", controller.CreateTransaction())
 
 }
