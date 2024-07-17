@@ -46,7 +46,7 @@ func CreateTransaction() func(c *gin.Context) {
 func EditTransaction() func(c *gin.Context) {
 	return func(c *gin.Context) {
 
-		transaction := model.Transaction{}
+		var transaction model.Transaction
 
 		c.JSON(200, gin.H{
 			"code":    200,
